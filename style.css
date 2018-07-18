@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    background: #01182a;
+    margin: ;
+    padding: ;
+}
+
+.nav-bar {
+    font-size: large;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    margin: 0 15%;
+    padding: 27px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.nav-logo {
+    margin-right: auto;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 2em;
+    font-family:;
+}
+
+.nav-bar a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.photo-slider {
+    background-image: url(img/Slider1.jpg);
+    height: 800px;
+}
+
+.photo-slider-content {
+    max-width: 100%;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #4ea8de;
+    padding: 2em 5em;
+}
+
+.photo-slider-content hr {
+    width: 15%;
+    margin-left: 0;
+    border: 3px solid black;
+}
+
+.photo-slider-content .small {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.photo-slider-content button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    background: transparent;
+    border-width: 0.5px;
+}
+
+.photo-slider-content button:hover {
+    background-color: yellow;
+    border-color: yellow;
+    cursor: pointer;
+}
+
+
