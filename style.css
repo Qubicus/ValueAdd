@@ -8,8 +8,10 @@ body {
     width: 100%;
     height: auto;
     background: #01182a;
-    margin: ;
-    padding: ;
+        position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .nav-bar {
@@ -21,6 +23,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
+    z-index: 9999;
 }
 
 .nav-logo {
@@ -53,6 +56,7 @@ body {
     text-transform: uppercase;
     color: #4ea8de;
     padding: 2em 5em;
+    margin-top: 107px;
 }
 
 .photo-slider-content hr {
@@ -69,20 +73,51 @@ body {
     font-weight: 500;
 }
 
-.photo-slider-content button {
+.yellow_button {
     font-family: Montserrat, sans-serif;
     font-weight: 100;
     font-size: 24px;
     padding: 0.5em 1em;
+    border: 0.5px solid lightgrey;
     border-radius: 2em;
     background: transparent;
-    border-width: 0.5px;
+    box-shadow: 5px 10px 30px 0 darkgray;
 }
 
-.photo-slider-content button:hover {
+.yellow_button:hover {
     background-color: yellow;
     border-color: yellow;
     cursor: pointer;
+}
+
+.services {
+    margin: 5% 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services div {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+.services h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+}
+.services p {
+    font: lighter 16px/20px Montserrat, sans-serif ;
+}
+
+.services a {
+    text-decoration: none;
+    color: black;
+}
+
+.services img {
+    border: 3.5px solid #4ea8de;
+    border-radius: 50%;
+    padding: 65px;
 }
 
 
