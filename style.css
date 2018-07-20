@@ -2,13 +2,14 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: Montserrat, sans-serif;
 }
 
 .nav {
     width: 100%;
     height: auto;
     background: #01182a;
-        position: fixed;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -16,7 +17,6 @@ body {
 
 .nav-bar {
     font-size: large;
-    font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     margin: 0 15%;
     padding: 27px;
@@ -49,10 +49,9 @@ body {
 
 .photo-slider-content {
     max-width: 100%;
-    font-family: Montserrat, sans-serif;
     font-size: 60px;
     font-weight: 900;
-    line-height: 18px;
+    line-height: 60px;
     text-transform: uppercase;
     color: #4ea8de;
     padding: 2em 5em;
@@ -60,13 +59,13 @@ body {
 }
 
 .photo-slider-content hr {
-    width: 15%;
+    width: 4em;
     margin-left: 0;
-    border: 3px solid black;
+    height: 3px;
+    background-color: black;
 }
 
 .photo-slider-content .small {
-    font-family: Montserrat, sans-serif;
     font-size: 24px;
     color: black;
     text-transform: capitalize;
@@ -100,13 +99,15 @@ body {
     text-align: center;
     font-family: Montserrat, sans-serif;
 }
+
 .services h3 {
     font-size: 24px;
     line-height: 24px;
     font-weight: 900;
 }
+
 .services p {
-    font: lighter 16px/20px Montserrat, sans-serif ;
+    font: lighter 16px/20px Montserrat, sans-serif;
 }
 
 .services a {
@@ -120,4 +121,74 @@ body {
     padding: 65px;
 }
 
+.services_technologies {
+    display: flex;
+    width: 1903px;
+    height: 340px;
+    background-image: url(img/services_technologies.png);
+    justify-content: center;
+    color: white;
+}
 
+.services_technologies div {
+    width: 580px;
+    height: 255px;
+}
+
+.services_technologies h1 {
+    font: 900 60px/60px Montserrat, sans-serif;
+    text-transform: uppercase;
+}
+
+.services_technologies ul {
+
+}
+
+.services_technologies li {
+    font: bold 20px/20px Montserrat, sans-serif;
+    padding-bottom: 30px;
+    float: left;
+    width: 50%;
+}
+
+.services_technologies button {
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    padding: 0.2em 1em;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 2em;
+    background: transparent;
+}
+
+.services_technologies button:hover {
+    background-color: yellow;
+    border-color: yellow;
+    cursor: pointer;
+    color: black;
+}
+
+#customers {
+    font: bolder 60px/60px Montserrat, sans-serif;
+    margin-left: 20%;
+}
+
+.container {
+    width: 100%;
+    margin: 10px 20%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 135px);
+    grid-template-rows: repeat(3, 135px);
+    grid-gap: 20px;
+}
+
+.grid img {
+    border: 1px solid #e8e7e7;
+    max-width: 100%;
+    height: auto;
+}
