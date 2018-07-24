@@ -1,0 +1,94 @@
+body {
+    font: 18px/1 Montserrat, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Global */
+.container {
+    max-width: 1102px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: #01182a;
+    color: #ffffff;
+    height: 98px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #logo {
+    float: left;
+    margin-top: 25px;
+}
+
+header nav {
+    float: right;
+    margin-top: 45px;
+}
+
+header a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Showcase */
+
+#showcase {
+    background-image: url(img/Slider1.jpg);
+    height: 800px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
