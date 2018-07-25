@@ -11,10 +11,37 @@ body {
     overflow: hidden;
 }
 
+.yellow_button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 35px;
+    border: 0.5px solid lightgrey;
+    border-radius: 2em;
+    background: transparent;
+    box-shadow: 2px 2px 3px 0 lightgrey;
+}
+
+.yellow_button:hover {
+    background-color: yellow;
+    border-color: yellow;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header*/
 header {
     background: #01182a;
     color: #ffffff;
     height: 98px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header a {
@@ -37,6 +64,7 @@ header li {
 header #logo {
     float: left;
     margin-top: 25px;
+    padding-left: 5px;
 }
 
 header nav {
@@ -55,10 +83,76 @@ header a:hover {
     background-image: url(img/Slider1.jpg);
     height: 800px;
     text-align: left;
+    margin-top: 98px
 }
 
+#showcase div {
+    padding-top: 12em;
+    overflow: visible;
+}
 
+#showcase h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4ea8de;
+}
 
+#showcase hr {
+    width: 11em;
+    margin-left: 0;
+    height: 3px;
+    background-color: black;
+}
+
+#showcase p {
+    font-size: 24px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/* Boxes */
+
+#boxes div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    overflow: visible;
+}
+
+#boxes .box {
+    display: block;
+    text-align: center;
+    width: 33%;
+}
+
+#boxes .box img {
+    border: 3.5px solid #4ea8de;
+    border-radius: 50%;
+    padding: 65px;
+}
+
+#boxes .box h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+}
+
+#boxes .box p {
+    font: lighter 16px/20px Montserrat, sans-serif;
+}
+
+/*Lists*/
+#lists {
+    margin-top: 60px;
+    height: 380px;
+    max-width: 100%;
+    background-image: url(img/services_technologies.png) no-repeat center center fixed;
+    background-size: cover;
+}
 
 
 
