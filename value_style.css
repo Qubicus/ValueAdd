@@ -1,5 +1,5 @@
 body {
-    font: 18px/1 Montserrat, sans-serif;
+    font: 18px/1px Montserrat, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -17,15 +17,16 @@ body {
     font-size: 20px;
     line-height: 48px;
     padding: 0 35px;
-    border: 0.5px solid lightgrey;
+    border: 0.5px solid #123751;
     border-radius: 2em;
     background: transparent;
     box-shadow: 2px 2px 3px 0 lightgrey;
+    transition: 0.5s;
 }
 
 .yellow_button:hover {
-    background-color: yellow;
-    border-color: yellow;
+    background-color: #fbe020;
+    border-color: #fbe020;
     cursor: pointer;
 }
 
@@ -45,9 +46,11 @@ header {
 }
 
 header a {
+    position: relative;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 header ul {
@@ -72,9 +75,26 @@ header nav {
     margin-top: 45px;
 }
 
+header a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fbe020;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
 header a:hover {
-    color: yellow;
-    text-decoration: underline;
+    color: #fbe020;
+}
+
+header a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 /* Showcase */
@@ -87,12 +107,13 @@ header a:hover {
 }
 
 #showcase div {
+    padding-left: 2em;
     padding-top: 12em;
     overflow: visible;
 }
 
 #showcase h1 {
-    margin: 0;
+    margin: 30px 0 40px 0;
     padding-bottom: 20px;
     font-size: 60px;
     font-weight: 900;
@@ -108,6 +129,8 @@ header a:hover {
 }
 
 #showcase p {
+    margin-top: 40px;
+    margin-bottom: 60px;
     font-size: 24px;
     color: black;
     text-transform: capitalize;
@@ -117,7 +140,7 @@ header a:hover {
 /* Boxes */
 
 #boxes div {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
     overflow: visible;
@@ -132,7 +155,7 @@ header a:hover {
 #boxes .box img {
     border: 3.5px solid #4ea8de;
     border-radius: 50%;
-    padding: 65px;
+    padding: 45px;
 }
 
 #boxes .box h3 {
@@ -142,30 +165,35 @@ header a:hover {
 }
 
 #boxes .box p {
-    font: lighter 16px/20px Montserrat, sans-serif;
+    font: lighter 14px/20px Montserrat, sans-serif;
+    max-width: 17rem;
+    margin: 1rem auto;
 }
 
 /*Lists*/
 #lists {
     margin-top: 60px;
     height: 380px;
-    max-width: 100%;
-    background-image: url(img/services_technologies.png);
-    background-size: cover;
+    width: 100%;
+    background: url(img/services_technologies.png);
+    background-size: contain;
+
 }
 
 #lists .container {
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
     overflow: visible;
 }
 
 .list {
     color: white;
+    margin-left: 10px;
+    width: 50%;
 }
 
 .list h1 {
-    font: 900 60px/60px Montserrat, sans-serif;
+    font: 900 50px/60px Montserrat, sans-serif;
     text-transform: uppercase;
 }
 
@@ -175,7 +203,7 @@ header a:hover {
 }
 
 .list li {
-    font: bold 20px/20px Montserrat, sans-serif;
+    font: 900 18px/20px Montserrat, sans-serif;
     padding-bottom: 30px;
     float: left;
     width: 50%;
@@ -188,11 +216,12 @@ header a:hover {
     border: 0.5px solid white;
     border-radius: 2em;
     background: transparent;
+    transition: 0.5s;
 }
 
 .list button:hover {
-    background-color: yellow;
-    border-color: yellow;
+    background-color: #fbe020;
+    border-color: #fbe020;
     cursor: pointer;
     color: black;
 }
