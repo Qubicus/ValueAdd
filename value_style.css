@@ -11,7 +11,7 @@ body {
     overflow: hidden;
 }
 
-.yellow_button {
+.button--main {
     font-family: Montserrat, sans-serif;
     font-weight: 100;
     font-size: 20px;
@@ -24,7 +24,7 @@ body {
     transition: 0.5s;
 }
 
-.yellow_button:hover {
+.button--main:hover {
     background-color: #fbe020;
     border-color: #fbe020;
     cursor: pointer;
@@ -61,7 +61,7 @@ header ul {
 header li {
     float: left;
     display: inline;
-    padding: 0 20px;
+    padding: 1px 20px;
 }
 
 header #logo {
@@ -226,11 +226,30 @@ header a:hover:before {
     color: black;
 }
 
+/* Grid Table */
+#customers {
+    font: bolder 60px/60px Montserrat, sans-serif;
+}
 
+#grid .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-column-gap: 0px;
+}
 
+.grid__box {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 135px;
+    height: 135px;
+    padding: 5px;
+}
 
-
-
+.grid__box img {
+    width: 100%;
+    height: auto;
+}
 
 
 

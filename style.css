@@ -47,19 +47,22 @@ body section {
 }
 
 .photo-slider {
-    background-image: url(img/Slider1.jpg);
     height: 800px;
+    overflow: hidden;
 }
 
 .photo-slider-content {
-    max-width: 100%;
+    background-image: url(img/Slider1.jpg);
+    width: 50%;
     font-size: 60px;
     font-weight: 900;
     line-height: 60px;
     text-transform: uppercase;
     color: #4ea8de;
-    padding: 2em 5em;
     margin-top: 107px;
+}
+.photo-slider-content_2 {
+
 }
 
 .photo-slider-content hr {
